@@ -145,7 +145,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            path=""
             element={
               <Home
                 items={items}
@@ -163,13 +163,13 @@ function App() {
 
         <Routes>
           <Route
-            path="/favorites"
+            path="favorites"
             element={<Favorites onAddToFavorite={onAddToFavorite} />}
           ></Route>
         </Routes>
 
         <Routes>
-          <Route path="/orders" element={<Orders />}></Route>
+          <Route path="orders" element={<Orders />}></Route>
         </Routes>
       </div>
     </AppContext.Provider>
